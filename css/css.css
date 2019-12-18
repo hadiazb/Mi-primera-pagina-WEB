@@ -1,0 +1,346 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background: #fff;
+  font-family: verdana;
+}
+.logo{
+  width: 175px;
+  height: 70px;
+  cursor: pointer;
+}
+.menu_bar{
+  display: none;
+}
+header{
+  width: 100%;
+}
+header .contenedor{                              /*Comandos para dejar el icono y el menu en linea*/
+    display: flex;
+    justify-content: space-between;
+}
+header nav{
+  background: #fff;
+  z-index: 1000;
+  max-width: 1000px;
+  width: 100%;
+  /* margin: 0px auto; */
+}
+/* Bloque para fijar estilo de texto sobre los slides */
+.slides .titulo h1 {
+  position: absolute;
+  opacity: .5;
+  background: #000;
+  color: #fff;
+  width: 500px;
+  height: 60px;
+  margin-top: 20%;
+  margin-left: 0%;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 30px;
+  font-family: verdana;
+  border-radius: 10px;
+}
+
+header nav ul li {
+  display: inline-block;
+  position: relative;
+}
+header nav ul li a{
+  color: #0ea122;
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 20px;
+}
+header nav ul li a span{
+  margin-right: 10px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+header nav ul li a:hover{
+  background: #18c111;
+  color: #fff;
+}
+header nav ul li:hover .children{
+  display: block;
+}
+header nav ul li .children{
+  display: none;
+  background: #fff;
+  position: absolute;
+  width: 150%;
+  z-index: 1000;
+}
+header nav ul li .children li {
+  display: block;
+  overflow: hidden;
+  /* border-bottom: 1px solid #18c111; */
+}
+header nav ul li .children li a span{
+  display: block;
+  float: right;
+  position: relative;
+  top: 3px;
+  margin-right: 0;
+  margin-left: 5px;
+}
+header nav ul li .caret{
+  position: relative;
+  top: 3px;
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+/* slideshow o barner */
+.main{
+  width: 100%;
+  margin: 20px auto;
+  overflow: auto; /*Comando opcional */
+}
+
+.slides{
+  width: 100%;
+}
+.slides img{
+  width: 100%;
+  z-index: 10;
+}
+.slidesjs-pagination{
+  background: #2b2d2f;
+  list-style: none;
+  overflow: hidden;
+}
+.slidesjs-pagination li{
+  float: left;
+}
+.slidesjs-pagination li a{
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+.slidesjs-pagination li a:hover{
+  background: #000;
+}
+.slides .active{
+  background: #000;
+}
+.slidesjs-navigation{
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 11.5px 20px;
+  float: right;
+  display: inline-block;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background: #0d4d1d;
+    color: white;
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 400px;
+}
+
+.colum1 h1{
+    font-size: 22px;
+}
+
+.colum1 img{
+    margin-top: 20px;
+    width: 60%;
+}
+
+.colum2{
+    max-width: 400px;
+}
+
+.colum2 h1{
+    font-size: 22px;
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;
+    background: #101010;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+
+@media screen and (max-width:800px){
+  body{
+    padding-top: 80px;
+  }
+  .logo{
+    display: none;
+  }
+  .slides img{
+    width: 100%;
+    z-index: 10;
+  }
+  .menu_bar{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #18c111;
+    z-index: 500;
+  }
+  .menu_bar .bt-menu{
+    display: block;
+    padding: 20px;
+    color: #fff;
+    overflow: hidden;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .menu_bar span{
+    float: right;
+    font-size: 40px;
+  }
+  header nav {
+    width: 80%;
+    height: calc(100% -80px);
+    position: fixed;
+    right: 100%;
+    margin: 0;
+    overflow: scroll;
+  }
+  header nav ul li {
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+  }
+  header nav ul li a {
+    display: block;
+  }
+  header nav ul li .children{
+    width: 100%;
+    position: relative;
+  }
+  header nav ul li .children li a {
+    margin-left: 20px;
+  }
+  header nav ul li .caret{
+    float: right;
+  }
+  header nav ul li:hover .children{
+    display: block;
+  }
+  .slides .titulo h1 {
+    position: absolute;
+    opacity: .5;
+    background: #000;
+    color: #fff;
+    width: 300px;
+    height: 60px;
+    margin-top: 20%;
+    margin-left: 0%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 15px;
+    font-family: verdana;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 1100px){
+
+    .container-body{
+        flex-wrap: wrap;
+    }
+
+    .colum1{
+        max-width: 100%;
+    }
+
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+}

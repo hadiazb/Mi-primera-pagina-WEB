@@ -30,21 +30,6 @@ header nav{
   /* margin: 0px auto; */
 }
 /* Bloque para fijar estilo de texto sobre los slides */
-.slides .titulo h1 {
-  position: absolute;
-  opacity: .5;
-  background: #000;
-  color: #fff;
-  width: 500px;
-  height: 60px;
-  margin-top: 20%;
-  margin-left: 0%;
-  text-align: center;
-  padding-top: 10px;
-  font-size: 30px;
-  font-family: verdana;
-  border-radius: 10px;
-}
 
 header nav ul li {
   display: inline-block;
@@ -99,55 +84,57 @@ header nav ul li .caret{
   margin-right: 0;
 }
 
-/* slideshow o barner */
-.main{
+/* Contenido */
+.contacto{
+  margin:  auto 10px;
+  width: 340px;
+}
+.contacto .formulario {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding:  10px ;
+  background-color: #18c111;
+  border: 2px  solid #000;
+  border-radius: 20px;
   width: 100%;
-  margin: 20px auto;
-  overflow: auto; /*Comando opcional */
+}
+.contacto .formulario h4{
+  font-size: 1em;
+  text-align: center;
+  color: #fff;
+  font-family: verdana;
+  text-shadow: 1px 1px 2px black;
+  padding: 5px 5px 20px 5px;
+}
+.formulario  label{
+  font-size: .8em;
+  text-align: center;
+  color: #fff;
+  font-family: verdana;
+  text-shadow: 1px 1px 2px black;
+  padding-left: 0px;
+  padding-right: 4px;
+}
+.formulario  input{
+  width: 310px;
+  border: 1px solid #000;
+  height: 28px;
+  border-radius: 5px;
+}
+#enviar{
+  width: 100px;
+  margin:10px 10px 20px 100px;
+  position: relative;
 }
 
-.slides{
-  width: 100%;
-}
-.slides img{
-  width: 100%;
-  z-index: 10;
-}
-.slidesjs-pagination{
-  background: #2b2d2f;
-  list-style: none;
-  overflow: hidden;
-}
-.slidesjs-pagination li{
-  float: left;
-}
-.slidesjs-pagination li a{
-  display: block;
-  padding: 10px 20px;
-  color: #fff;
-  text-decoration: none;
-}
-.slidesjs-pagination li a:hover{
-  background: #000;
-}
-.slides .active{
-  background: #000;
-}
-.slidesjs-navigation{
-  background: #000;
-  color: #fff;
-  text-decoration: none;
-  display: inline-block;
-  padding: 11.5px 20px;
-  float: right;
-  display: inline-block;
-}
 
 /* footer */
 footer{
     width: 100%;
     background: #18c111;
     color: white;
+    bottom: 0; /*Deja el footer abajo de la pagina*/
+    /* position: fixed; */
 }
 
 .container-footer-all{

@@ -28,25 +28,7 @@ header nav{
   max-width: 1000px;
   width: 100%;
   /* margin: 0px auto; */
-}
-/* Bloque para fijar estilo de texto sobre los slides */
-.slides .titulo h1 {
-  position: absolute;
-  opacity: .5;
-  background: #000;
-  color: #fff;
-  width: 500px;
-  height: 60px;
-  margin-top: 20%;
-  margin-left: 0%;
-  text-align: center;
-  padding-top: 10px;
-  font-size: 30px;
-  font-family: verdana;
-  border-radius: 10px;
-}
-
-header nav ul li {
+}header nav ul li {
   display: inline-block;
   position: relative;
 }
@@ -98,51 +80,6 @@ header nav ul li .caret{
   margin-left: 10px;
   margin-right: 0;
 }
-
-/* slideshow o barner */
-.main{
-  width: 100%;
-  margin: 20px auto;
-  overflow: auto; /*Comando opcional */
-}
-
-.slides{
-  width: 100%;
-}
-.slides img{
-  width: 100%;
-  z-index: 10;
-}
-.slidesjs-pagination{
-  background: #2b2d2f;
-  list-style: none;
-  overflow: hidden;
-}
-.slidesjs-pagination li{
-  float: left;
-}
-.slidesjs-pagination li a{
-  display: block;
-  padding: 10px 20px;
-  color: #fff;
-  text-decoration: none;
-}
-.slidesjs-pagination li a:hover{
-  background: #000;
-}
-.slides .active{
-  background: #000;
-}
-.slidesjs-navigation{
-  background: #000;
-  color: #fff;
-  text-decoration: none;
-  display: inline-block;
-  padding: 11.5px 20px;
-  float: right;
-  display: inline-block;
-}
-
 /* footer */
 footer{
     width: 100%;

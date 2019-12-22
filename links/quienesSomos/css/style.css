@@ -99,55 +99,13 @@ header nav ul li .caret{
   margin-right: 0;
 }
 
-/* slideshow o barner */
-.main{
-  width: 100%;
-  margin: 20px auto;
-  overflow: auto; /*Comando opcional */
-}
-
-.slides{
-  width: 100%;
-}
-.slides img{
-  width: 100%;
-  z-index: 10;
-}
-.slidesjs-pagination{
-  background: #2b2d2f;
-  list-style: none;
-  overflow: hidden;
-}
-.slidesjs-pagination li{
-  float: left;
-}
-.slidesjs-pagination li a{
-  display: block;
-  padding: 10px 20px;
-  color: #fff;
-  text-decoration: none;
-}
-.slidesjs-pagination li a:hover{
-  background: #000;
-}
-.slides .active{
-  background: #000;
-}
-.slidesjs-navigation{
-  background: #000;
-  color: #fff;
-  text-decoration: none;
-  display: inline-block;
-  padding: 11.5px 20px;
-  float: right;
-  display: inline-block;
-}
-
 /* footer */
 footer{
     width: 100%;
     background: #18c111;
     color: white;
+    bottom: 0; /*Deja el footer abajo de la pagina*/
+
 }
 
 .container-footer-all{
